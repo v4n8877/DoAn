@@ -1,0 +1,124 @@
+{
+    "category": [
+        {
+            "id": "1",
+            "maloaisp": "lt01",
+            "tenloaisp": "Laptop01",
+            "nhacungcap": "Samsung",
+            "soluong": "15"
+        },
+        {
+            "id": "2",
+            "maloaisp": "dt01",
+            "tenloaisp": "dienthoai01",
+            "nhacungcap": "Oppo",
+            "soluong": "10"
+        },
+        {
+            "id": "3",
+            "maloaisp": "tv01",
+            "tenloaisp": "tivi01",
+            "nhacungcap": "Apple",
+            "soluong": "15"
+        }
+    ],
+
+    "product": [
+        {
+            "id": "1",
+            "maloaisp": "lt01",
+            "masp": "smg",
+            "tensp": "samsung galaxy",
+            "soluong": "20",
+            "gia": "1500000",
+            "image": "https://www.anphatpc.com.vn/media/product/20378_ls22f350fhexxv_1.jpg"
+        },
+        {
+            "id": "2",
+            "maloaisp": "dt01",
+            "masp": "op7",
+            "tensp": "oppo neo7",
+            "soluong": "10",
+            "gia": "14500000",
+            "image": "https://drop.ndtv.com/TECH/product_database/images/1026201515058PM_635_oppo_neo_7.jpeg"
+        },
+        {
+            "id": "3",
+            "maloaisp": "tv01",
+            "masp": "snled",
+            "tensp": "tivi led",
+            "soluong": "20",
+            "gia": "1500000",
+            "image": "https://www.vatgia.com/upload_images/Image/2017/04/Sony-KDL-40W650D(1).jpg"
+        }
+    ],
+
+    "user": [
+        {
+            "id": "1",
+            "tendangnhap": "navinh",
+            "email": "navinh@gmail.com",
+            "sdt": "0972838473",
+            "pass": "123456",
+            "ngaysinh": "10/10/1987",
+            "gioitinh": "nam",
+            "diachi": "danang"
+        },
+        {
+            "id": "2",
+            "tendangnhap": "thieuanh",
+            "email": "thieuanh@gmail.com",
+            "sdt": "0972338475",
+            "pass": "1234567",
+            "ngaysinh": "01/10/1989",
+            "gioitinh": "nam",
+            "diachi": "danang"
+        },
+        {
+            "id": "3",
+            "tendangnhap": "nttra",
+            "email": "nttra@gmail.com",
+            "sdt": "0972663842",
+            "pass": "12345",
+            "ngaysinh": "14/08/1994",
+            "gioitinh": "nu",
+            "diachi": "quangnam"
+        }
+    ],
+
+    "order": [
+        {
+            "id": "1",
+            "masp": "smg",
+            "tensp": "samsung galaxy",
+            "soluong": "6",
+            "gia": "1500000",
+            "date": "21/05/2018",
+            "tendangnhap": "navinh",
+            "diachi": "danang",
+            "sdt": "0972838473"
+        },
+        {
+            "id": "2",
+            "masp": "smg",
+            "tensp": "samsung galaxy",
+            "soluong": "8",
+            "gia": "1500000",
+            "date": "22/05/2018",
+            "tendangnhap": "thieuanh",
+            "diachi": "danang",
+            "sdt": "0972338475"
+        },
+        {
+            "id": "3",
+            "masp": "op7",
+            "tensp": "oppo neo7",
+            "soluong": "2",
+            "gia": "14500000",
+            "date": "23/05/2018",
+            "tendangnhap": "thieuanh",
+            "diachi": "danang",
+            "sdt": "0972338475"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "category": [
+        {
+            "maloaisp": "lt01",
+            "tenloaisp": "Laptop01",
+            "nhacungcap": "Samsung",
+            "soluong": "15"
+        },
+        {
+            "maloaisp": "dt01",
+            "tenloaisp": "dienthoai01",
+            "nhacungcap": "Oppo",
+            "soluong": "10"
+        },
+        {
+            "maloaisp": "tv01",
+            "tenloaisp": "tivi01",
+            "nhacungcap": "Apple",
+            "soluong": "15"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+ 
+    "product": [
+        {
+            "id": "1",
+            "maloaisp": "lt01",
+            "masp": "smg",
+            "tensp": "samsung galaxy",
+            "soluong": "20",
+            "gia": "1500000",
+            "image": "https://www.anphatpc.com.vn/media/product/20378_ls22f350fhexxv_1.jpg"
+        },
+        {
+            "id": "2",
+            "maloaisp": "dt01",
+            "masp": "op7",
+            "tensp": "oppo neo7",
+            "soluong": "10",
+            "gia": "14500000",
+            "image": "https://drop.ndtv.com/TECH/product_database/images/1026201515058PM_635_oppo_neo_7.jpeg"
+        },
+        {
+            "id": "3",
+            "maloaisp": "tv01",
+            "masp": "snled",
+            "tensp": "tivi led",
+            "soluong": "20",
+            "gia": "1500000",
+            "image": "https://www.vatgia.com/upload_images/Image/2017/04/Sony-KDL-40W650D(1).jpg"
+        }
+    ]
+}

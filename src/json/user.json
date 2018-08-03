@@ -1,0 +1,34 @@
+{
+    "user": [
+        {
+            "id": "1",
+            "tendangnhap": "navinh",
+            "email": "navinh@gmail.com",
+            "sdt": "0972838473",
+            "pass": "123456",
+            "ngaysinh": "10/10/1987",
+            "gioitinh": "nam",
+            "diachi": "danang"
+        },
+        {
+            "id": "2",
+            "tendangnhap": "thieuanh",
+            "email": "thieuanh@gmail.com",
+            "sdt": "0972338475",
+            "pass": "1234567",
+            "ngaysinh": "01/10/1989",
+            "gioitinh": "nam",
+            "diachi": "danang"
+        },
+        {
+            "id": "3",
+            "tendangnhap": "nttra",
+            "email": "nttra@gmail.com",
+            "sdt": "0972663842",
+            "pass": "12345",
+            "ngaysinh": "14/08/1994",
+            "gioitinh": "nu",
+            "diachi": "quangnam"
+        }
+    ]
+}

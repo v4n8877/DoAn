@@ -1,0 +1,37 @@
+{
+    "order": [
+        {
+            "id": "1",
+            "masp": "smg",
+            "tensp": "samsung galaxy",
+            "soluong": "6",
+            "gia": "1500000",
+            "date": "21/05/2018",
+            "tendangnhap": "navinh",
+            "diachi": "danang",
+            "sdt": "0972838473"
+        },
+        {
+            "id": "2",
+            "masp": "smg",
+            "tensp": "samsung galaxy",
+            "soluong": "8",
+            "gia": "1500000",
+            "date": "22/05/2018",
+            "tendangnhap": "thieuanh",
+            "diachi": "danang",
+            "sdt": "0972338475"
+        },
+        {
+            "id": "3",
+            "masp": "op7",
+            "tensp": "oppo neo7",
+            "soluong": "2",
+            "gia": "14500000",
+            "date": "23/05/2018",
+            "tendangnhap": "thieuanh",
+            "diachi": "danang",
+            "sdt": "0972338475"
+        }
+    ]
+}
