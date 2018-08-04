@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
+import AppCss from './App.css';
 import { Link } from 'react-router-dom';
 import HomeStores from './stores/HomeStores';
-import {Autocomplete} from 'react-autocomplete';
+import * as HomeActions from './actions/HomeActions';
 
 import Nav from './assets/img/nav_menu.js';
 
@@ -10,7 +10,7 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      getPhone: [],
+      getPhone: HomeStores.getAllData(),
       showPhone: []
     }
   }
@@ -23,37 +23,26 @@ class App extends Component {
       })
   }
 
-  componentDidMount(){
+  /*componentDidMount(){
     HomeStores.on("change", () => {
         this.setState({
-          showPhone: this.state.getPhone,
+          getPhone: this.state.getPhone,
         });
       })
-  }
+  }*/
 
   onChangeSearch = () => {
-    console.log(this.refs.searchPhone.value);
-    let searchPhone = this.refs.searchPhone.value;
-    let searchFinal = searchPhone.toLowerCase();
-   
-    let getPhone = this.state.getPhone;
-    console.log(getPhone);
-    let getFinal = getPhone.filter((getName, index)=>{
-      console.log(searchFinal);
-      if (getName.productName.toLowerCase().indexOf(searchFinal) > -1) {
-        return true;
-        }
-   });
-   this.setState({
-    showPhone: getFinal
-   });
-   let displayCSS = {display: 'block',};
-   this.refs.searchPhone = displayCSS;
+    HomeActions.findPhone(this.refs.searchPhone.value );
   }
 
   render() {
     const {showPhone, getPhone} = this.state;
-    console.log(showPhone);
+    const finalPhone = getPhone.map((name) => {
+      return (
+          <a  key={name.id}>{name.productName}</a>
+        );
+      console.log(finalPhone);
+    })
     return (
       <div className="all-content">
         <div className="container-flux">
@@ -63,14 +52,10 @@ class App extends Component {
                 <div className="col-md-8">
                   <div className="content-input">
                     <input type="text" className="myInput" ref="searchPhone" placeholder="Search..." onChange={()=>this.onChangeSearch()} />
-                      {showPhone.map((name) => {
-                        return (
-                          <div>
-                              <a href="/" ref="showName" key={name.id}>{name.productName}</a>
-                          </div>
-                          )
-                      })}
-                      <button type="submit"><i className="fa fa-search"></i></button>
+                      <div>
+                        {finalPhone}
+                      </div>
+                      <button type="submit"><i class="fa fa-search"></i></button>
                   </div>
                 </div>
                 <div className="col-md-4">

@@ -4,12 +4,13 @@ import HomeStores from '../stores/HomeStores.js';
 import '../App.css';
 
 import { Link } from 'react-router-dom';
+import ProductList from './productlist';
 
 class Home extends Component {
 	constructor(){
 		super();
 		this.state = {
-			categorys: HomeStores.getAllData()
+			categorys: []
 		}
 	}
 
@@ -27,7 +28,7 @@ class Home extends Component {
 			if (todo.tag == "hot") {
 				return(
 						<div className="col-md-4">
-							<div className="card" key={todo.id}>
+							<div className="card">
 							  <div className="card-header">
 							  	<img className="card-img-top" src={todo.image} alt="Card image" />
 							  </div>
@@ -36,7 +37,7 @@ class Home extends Component {
 	   							<p className="card-text">{todo.manutype}</p>	
 							  </div> 
 							  <div className="card-footer">
-							  	<Link to="/productlist" className="btn btn-primary">See Profile</Link>
+							  	<Link to={`/ProductList/${todo.id}`} key={todo.id} className="btn btn-primary" onClick={(key)=>this.getDetail(key)}>See Profile</Link>
 							  </div>
 							</div>
 						</div>			
@@ -54,9 +55,9 @@ class Home extends Component {
 							  <div className="card-body">
 							  	<h4 className="card-title">{todo.productName}</h4>
 	   							<p className="card-text">{todo.manutype}</p>	
-							  </div> 
+							  </div>
 							  <div className="card-footer">
-							  	<Link to="/productlist" className="btn btn-primary">See Profile</Link>
+							  	<Link to={`/ProductList/${todo.id}`} className="btn btn-primary">See Profile</Link>
 							  </div>
 							</div>
 						</div>			
