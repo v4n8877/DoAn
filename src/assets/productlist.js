@@ -2,45 +2,51 @@ import React, { Component } from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import HomeStores from '../stores/HomeStores';
-import {Autocomplete} from 'react-autocomplete';
-
-import Nav from '../assets/img/nav_menu.js';
-import Home from './home';
 
 class ProductList extends Component{
 	constructor(){
 		super();
 		this.state = {
-			category: [],
-			id:''
+			category: HomeStores.getAllData()
 		}
 	}
 	
-	componentWillMount(){
-		let id = this.props.match.params.id;
-		this.setState({
-	          id: id
-	        });
+	componentWillMount(event){
+
 		HomeStores.on("change", () => {
 	        this.setState({
 	          category: HomeStores.getAllData()
 	        });
 	   	})
-    	
 	}
 
 	render(){
-		const {id, category} = this.state;
-		const showDetails = category.map((todo)=>{
-        	if(todo.id === id){
-        		return (
-        			<h1 key={todo.id}>{todo.productName}</h1>
+		const {category} = this.state;
+		const showProduct = category.slice(0, 5).map((proList)=>{
+        	if(proList.productID === 'samsung'){
+        		return (        			
+				    <div className="container">
+				     	<div className="d-inline-flex">  
+					      	<div className="card">
+					           <img className="card-img-top" src={proList.image} />
+					           <div className="card-body">
+					             <h4 className="card-title">{proList.productName}</h4>
+					             <p className="card-text">{proList.detail}</p>
+					           </div>
+					        </div>
+				    	</div>
+				    </div>
         		);
         	}
         });
 		return(
 			<div>
-				{showDetails}
+				<section style={{"backgroundColor": "white"}}>
+					<span id="samsung"><img  style={{"width":"250px","height":"80px"}} src="img/samsung.jpg"/></span>
+					<div className="row">
+						{showProduct}
+					</div>
+				</section>
 			</div>
 		);
 	}

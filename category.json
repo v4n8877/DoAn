@@ -1,54 +1,70 @@
 {
     "manufacture": [{
             "id": "1",
-            "manutype": "SAMSUNG",
+            "manutype": "http://1000logos.net/wp-content/uploads/2017/10/Logo-Samsung-png.png",
             "homeurl": "https://www.samsung.com/vn/"
         },
         {
             "id": "2",
-            "manutype": "APPLE",
+            "manutype": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5gJc6gTqQpEGlxE7Yq9sYS8M5pcmRH6UVgEJF8NeuoX1qGyw",
             "homeurl": "https://www.apple.com/"
         },
         {
             "id": "3",
-            "manutype": "OPPO",
+            "manutype": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/OPPO_Logo.svg/1280px-OPPO_Logo.svg.png",
             "homeurl": "https://oppomobile.vn/"
+        }
+    ],
+
+    "topbanner": [{
+            "id": "1",
+            "banner": "img/findx.jpg"
+        },
+        {
+            "id": "2",
+            "banner": "img/iphoneXI.jpg"
+        },
+        {
+            "id": "3",
+            "banner": "img/note9.jpg"
         }
     ],
 
     "product": [{
             "id": "1",
-            "productID": "ss01",
-            "productName": "Samsung Galaxy S9+ 128GB",
-            "manutype": "SAMSUNG",
+            "productID": "samsung",
+            "productName": "Samsung Galaxy S9+",
+            "manutype": "http://1000logos.net/wp-content/uploads/2017/10/Logo-Samsung-png.png",
             "quantity": "20",
             "price": "24.490.000 vnd",
             "image": "https://cdn.tgdd.vn/Products/Images/42/154695/samsung-galaxy-s9-plus-128gb-600x600-600x600-600x600.jpg",
             "imgFull": "https://cdn.tgdd.vn/Products/Images/42/154695/samsung-galaxy-s9-plus-128gb-den-1-2-org.jpg",
             "tag": "hot",
             "description": "Mua điện thoại Samsung Galaxy S9+ (Plus) 128GB chính hãng trả góp 0% và giảm ngay 2 triệu. Áp dụng đại tiệc giảm thêm lên đến 7% (30-31/08). Giảm thêm 1 triệu thanh toán online bằng thẻ Mastercard, ĐỘC QUYỀN: 90 ngày lỗi đổi mới, thu cũ đổi mới trợ giá 1 triệu.",
-            "detail": "Samsung Galaxy S9 Plus 128GB siêu phẩm smartphone camera kép có khả năng thay đổi khẩu độ, màn hình vô cực 2K+, sticker mô phỏng khuôn mặt bạn, và hiệu năng mạnh mẽ nhất hiện nay."
+            "detail": "Samsung Galaxy S9 Plus 128GB siêu phẩm smartphone camera kép có khả năng thay đổi khẩu độ, màn hình vô cực 2K+, sticker mô phỏng khuôn mặt bạn, và hiệu năng mạnh mẽ nhất hiện nay.",
+            "specs":"https://github.com/lethieuanh1989/DoAn/blob/master/public/img/tskt_s9+.jpg?raw=true"
         },
 
         {
             "id": "2",
-            "productID": "ss02",
+            "productID": "samsung",
             "productName": "Samsung Galaxy Note 8",
-            "manutype": "SAMSUNG",
+            "manutype": "http://1000logos.net/wp-content/uploads/2017/10/Logo-Samsung-png.png",
             "quantity": "20",
             "price": "22.490.000 vnd",
             "image": "https://cdn1.tgdd.vn/Products/Images/42/106211/samsung-galaxy-note8-black-1-600x600.jpg",
             "imgFull": "https://cdn3.tgdd.vn/Products/Images/42/106211/samsung-galaxy-note8-den-1-org.jpg",
             "tag": "hot",
             "description": "Mua điện thoại Samsung Galaxy Note 8 chính hãng trả góp 0% và giảm ngay 2 triệu. Áp dụng đại tiệc giảm thêm lên đến 7% (30-31/07). Giảm thêm 1 triệu thanh toán online bằng thẻ Mastercard, ĐỘC QUYỀN: 90 ngày lỗi đổi mới, thu cũ đổi mới trợ giá 1 triệu.",
-            "detail": "Samsung Galaxy Note 8 trang bị màn hình vô cực 6.3 inch, vi xử lý mạnh mẽ, bộ nhớ RAM lên đến 6 GB, kháng nước IP68, bút Spen đa năng độc đáo."
+            "detail": "Samsung Galaxy Note 8 trang bị màn hình vô cực 6.3 inch, vi xử lý mạnh mẽ, bộ nhớ RAM lên đến 6 GB, kháng nước IP68, bút Spen đa năng độc đáo.",
+            "specs":"img/tskt_n8.jpg"
         },
 
         {
             "id": "3",
-            "productID": "ss03",
+            "productID": "samsung",
             "productName": "Samsung Galaxy S9",
-            "manutype": "SAMSUNG",
+            "manutype": "http://1000logos.net/wp-content/uploads/2017/10/Logo-Samsung-png.png",
             "quantity": "20",
             "price": "19.990.000 vnd",
             "image": "https://cdn3.tgdd.vn/Products/Images/42/113263/samsung-galaxy-s9-black-600x600.jpg",
@@ -56,13 +72,14 @@
             "tag": "none",
             "description": "Mua điện thoại Samsung Galaxy S9 chính hãng trả góp 0% và giảm ngay 2 triệu. Áp dụng đại tiệc giảm thêm lên đến 7% (30-31/08). Giảm thêm 1 triệu thanh toán online bằng thẻ Mastercard, ĐỘC QUYỀN: 90 ngày lỗi đổi mới, thu cũ đổi mới trợ giá 1 triệu.",
             "detail": "Điện thoại Samsung Galaxy S9 sở hữu thiết kế tràn viền đẳng cấp, camera quay phim siêu chậm 960 FPS, cấu hình mạnh mẽ với chip Exynos 9810."
+            ,"specs":"img/tskt_s9.jpg"
         },
 
         {
             "id": "4",
-            "productID": "ss04",
+            "productID": "samsung",
             "productName": "Samsung Galaxy S8+",
-            "manutype": "SAMSUNG",
+            "manutype": "http://1000logos.net/wp-content/uploads/2017/10/Logo-Samsung-png.png",
             "quantity": "20",
             "gia": "17.990.000 vnd",
             "image": "https://cdn1.tgdd.vn/Products/Images/42/91131/samsung-galaxy-s8-plus-hh-600x600-600x600.jpg",
@@ -70,27 +87,30 @@
             "tag": "none",
             "description": "Mua điện thoại Samsung Galaxy S8 Plus chính hãng trả góp 0%, giảm ngay 1 triệu. Áp dụng đại tiệc giảm thêm lên đến 7% (30-31/07). Tặng phiếu mua hàng 250.000đ khi mua online.",
             "detail": "Samsung Galaxy S8 Plus màn hình cực lớn 6.2 độ phân giải 2K, cấu hình cực mạnh với Exynos 8895, RAM 4 GB cùng nhiều công nghệ như quét mống mắt, chống nước."
+            ,"specs":"img/tskt_s8+.jpg"
+
         },
 
         {
             "id": "5",
-            "productID": "ss05",
+            "productID": "samsung",
             "productName": "Samsung Galaxy S8",
-            "manutype": "SAMSUNG",
+            "manutype": "http://1000logos.net/wp-content/uploads/2017/10/Logo-Samsung-png.png",
             "quantity": "20",
             "gia": "13.990.000 vnd",
             "image": "https://cdn.tgdd.vn/Products/Images/42/78479/samsung-galaxy-s8-4-300x300.jpg",
             "imgFull": "https://cdn1.tgdd.vn/Products/Images/42/78479/samsung-galaxy-s8-xanhduong-1-3-org.jpg",
-            "tag": "hot",
+            "tag": "none",
             "description": "Mua điện thoại Samsung Galaxy S9+ (Plus) 128GB chính hãng trả góp 0% và giảm ngay 2 triệu. Áp dụng đại tiệc giảm thêm lên đến 7% (30-31/08). Giảm thêm 1 triệu thanh toán online bằng thẻ Mastercard, ĐỘC QUYỀN: 90 ngày lỗi đổi mới, thu cũ đổi mới trợ giá 1 triệu.",
             "detail": "Samsung Galaxy S9 Plus 128GB siêu phẩm smartphone camera kép có khả năng thay đổi khẩu độ, màn hình vô cực 2K+, sticker mô phỏng khuôn mặt bạn, và hiệu năng mạnh mẽ nhất hiện nay."
+            ,"specs":"img/tskt_s8.jpg"
         },
 
         {
             "id": "6",
             "productID": "ap01",
-            "productName": "iPhone X 256GB Gray",
-            "manutype": "APPLE",
+            "productName": "iPhone X 256GB",
+            "manutype": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5gJc6gTqQpEGlxE7Yq9sYS8M5pcmRH6UVgEJF8NeuoX1qGyw",
             "quantity": "20",
             "price": "34.790.000 vnd",
             "image": "https://cdn1.tgdd.vn/Products/Images/42/114111/iphone-x-256gb-a1-600x600-600x600-600x600.jpg",
@@ -98,13 +118,14 @@
             "tag": "hot",
             "description": "Mua điện thoại iPhone X 256GB Xám chính hãng trả góp 0% hoặc giảm ngay 3 triệu. Áp dụng đại tiệc giảm liền thêm 3% (30-31/07). Giảm thêm 3 triệu khi thanh toán online bằng thẻ Mastercard và 1 triệu cho Apple Watch khi mua kèm iPhone/iPad. 1 đổi 1 tháng đầu tiên với sản phẩm lỗi.",
             "detail": "Siêu phẩm iPhone X 256GB chính hãng cao cấp đẹp, mạnh mẽ bậc nhất thế giới smartphone. Trả góp, giao hàng miễn phí toàn quốc, bảo hành chính hãng."
+            ,"specs":"img/tskt_ix.jpg"
         },
 
         {
             "id": "7",
             "productID": "ap02",
             "productName": "iPhone 8 Plus 256GB",
-            "manutype": "APPLE",
+            "manutype": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5gJc6gTqQpEGlxE7Yq9sYS8M5pcmRH6UVgEJF8NeuoX1qGyw",
             "quantity": "20",
             "price": "28.790.000 vnd",
             "image": "https://cdn4.tgdd.vn/Products/Images/42/114114/iphone-8-plus-256gb-hh-600x600.jpg",
@@ -112,13 +133,14 @@
             "tag": "hot",
             "description": "Mua điện thoại iPhone 8 Plus 256G chính hãng trả góp 0% và giảm ngay 2 triệu. Áp dụng đại tiệc giảm thêm lên đến 7% (30-31/07). Giảm thêm 1 triệu thanh toán online bằng thẻ Mastercard, ĐỘC QUYỀN: 90 ngày lỗi đổi mới, thu cũ đổi mới trợ giá 1 triệu.",
             "detail": "iPhone 8 Plus với mặt lưng kính cường lực sang trọng, camera kép 12MP, cấu hình mạnh mẽ hơn với RAM 3GB, chip Apple A11 và công nghệ sạc pin nhanh."
+            ,"specs":"img/tskt_i8+256.jpg"
         },
 
         {
             "id": "8",
             "productID": "ap03",
             "productName": "iPhone 8 Plus 64GB",
-            "manutype": "APPLE",
+            "manutype": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5gJc6gTqQpEGlxE7Yq9sYS8M5pcmRH6UVgEJF8NeuoX1qGyw",
             "quantity": "20",
             "price": "23.990.000 vnd",
             "image": "https://cdn3.tgdd.vn/Products/Images/42/158738/iphone-8-plus-red-600x600.jpg",
@@ -126,13 +148,14 @@
             "tag": "none",
             "description": "Mua điện thoại iPhone 8 Plus 64GB chính hãng trả góp 0% và giảm ngay 2 triệu. Áp dụng đại tiệc giảm thêm lên đến 7% (30-31/08). Giảm thêm 1 triệu thanh toán online bằng thẻ Mastercard, ĐỘC QUYỀN: 90 ngày lỗi đổi mới, thu cũ đổi mới trợ giá 1 triệu.",
             "detail": "iPhone 8 Plus 64GB chính hãng thiết kế đẳng cấp, sang trọng, chuẩn chống nước IP67, ưu đãi Trả Góp hấp dẫn thủ tục đơn giản, nhanh chóng."
+            ,"specs":"img/tskt_i8+64.jpg"
         },
 
         {
             "id": "9",
             "productID": "ap04",
             "productName": "iPhone 8 64GB",
-            "manutype": "APPLE",
+            "manutype": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5gJc6gTqQpEGlxE7Yq9sYS8M5pcmRH6UVgEJF8NeuoX1qGyw",
             "quantity": "20",
             "gia": "20.990.000 vnd",
             "image": "https://cdn3.tgdd.vn/Products/Images/42/114113/iphone-8-64gb-hh-600x600jpg",
@@ -140,27 +163,29 @@
             "tag": "none",
             "description": "Mua điện thoại iPhone 8 64GB chính hãng trả góp 0% hoặc giảm ngay 1 triệu. Giảm thêm 1 triệu khi thanh toán online bằng thẻ Mastercard. Giao hàng miễn phí toàn quốc trong 1 giờ. 1 đổi 1 tháng đầu tiên với sản phẩm lỗi.",
             "detail": "iPhone 8 64GB với thiết kế sang trọng, mặt lưng từ kính cường lực, chip Apple A11 mạnh mẽ, sạc nhanh và không dây. Trả góp 0%, giao hàng toàn quốc miễn phí."
+            ,"specs":"img/tskt_i8.jpg"
         },
 
         {
             "id": "10",
             "productID": "ap05",
             "productName": "iPhone 7 Plus 256GB",
-            "manutype": "APPLE",
+            "manutype": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO5gJc6gTqQpEGlxE7Yq9sYS8M5pcmRH6UVgEJF8NeuoX1qGyw",
             "quantity": "20",
             "gia": "23.990.000 vnd",
             "image": "https://cdn.tgdd.vn/Products/Images/42/87840/iphone-7-plus-256gb-hh-600x600.jpg",
             "imgFull": "https://cdn1.tgdd.vn/Products/Images/42/87840/iphone-7-plus-256gb-den-1-5-org.jpg",
-            "tag": "hot",
+            "tag": "none",
             "description": "Mua điện thoại iPhone 7 Plus 256GB chính hãng trả góp 0% và giảm ngay 2 triệu. Áp dụng đại tiệc giảm thêm lên đến 7% (30-31/08). Giảm thêm 1 triệu thanh toán online bằng thẻ Mastercard, ĐỘC QUYỀN: 90 ngày lỗi đổi mới, thu cũ đổi mới trợ giá 1 triệu.",
             "detail": "iPhone 7 Plus 256GB thiết kế đẳng cấp, sang trọng, chuẩn chống nước IP67. Mua ngay để nhận nhiều ưu đãi hấp dẫn."
+            ,"specs":"img/tskt_i7+.jpg"
         },
 
         {
             "id": "11",
             "productID": "op01",
             "productName": "Oppo Find X",
-            "manutype": "OPPO",
+            "manutype": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/OPPO_Logo.svg/1280px-OPPO_Logo.svg.png",
             "quantity": "20",
             "price": "20.990.000 vnd",
             "image": "https://cdn4.tgdd.vn/Products/Images/42/165189/oppo-find-x-1-600x600.jpg",
@@ -168,13 +193,14 @@
             "tag": "hot",
             "description": "Đặt trước siêu phẩm OPPO Find X nhận tai nghe không dây cao cấp OPPO O Free, bảo hiểm rơi vỡ màn hình 1 năm, trả góp 0%. Siêu phẩm điện thoại màn hình tràn viền hoàn toàn, camera Ai, hiệu năng cực mạnh...Hàng chính hãng, bảo hành 12 tháng, giao hàng tận nơi miễn phí.",
             "detail": "Siêu phẩm OPPO Find X chính hãng cao cấp đẹp, mạnh mẽ bậc nhất thế giới smartphone. Trả góp, giao hàng miễn phí toàn quốc, bảo hành chính hãng."
+            ,"specs":"img/tskt_fx.jpg"
         },
 
         {
             "id": "12",
             "productID": "op02",
             "productName": "OPPO F7",
-            "manutype": "OPPO",
+            "manutype": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/OPPO_Logo.svg/1280px-OPPO_Logo.svg.png",
             "quantity": "20",
             "price": "7.990.000 vnd",
             "image": "https://cdn1.tgdd.vn/Products/Images/42/155261/oppo-f7-bac-600x600.jpg",
@@ -182,13 +208,14 @@
             "tag": "hot",
             "description": "Mua điện thoại OPPO F7 chính hãng trả góp 0%, giảm ngay 500.000đ (01 - 15/08) và tặng thêm bình giữ nhiệt khi mua online. Giao hàng miễn phí toàn quốc trong 1 giờ. 1 đổi 1 tháng đầu tiên với sản phẩm lỗi.",
             "detail": "Điện thoại OPPO F7 sở hữu camera nhiều cải tiến: Camera selfie 25 MP, đa dạng chế độ chụp ảnh đẹp, sticker AR; thiết kế viền siêu mỏng, tai thỏ thời thượng."
+            ,"specs":"img/tskt_f7.jpg"
         },
 
         {
             "id": "13",
             "productID": "op03",
             "productName": "OPPO F5 YOUTH",
-            "manutype": "OPPO",
+            "manutype": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/OPPO_Logo.svg/1280px-OPPO_Logo.svg.png",
             "quantity": "20",
             "price": "6.990.000 vnd",
             "image": "https://cdn1.tgdd.vn/Products/Images/42/142106/oppo-f5-6gb-anhava-1-300x300.jpg",
@@ -196,13 +223,14 @@
             "tag": "none",
             "description": "OPPO F5 6GB là phiên bản có cấu hình mạnh mẽ hơn với RAM 6 GB, màn hình tràn viền, camera AI thông minh, selfie siêu đẹp, ảo diệu.",
             "detail": "OPPO F5 6GB là phiên bản có cấu hình mạnh mẽ hơn với RAM 6 GB, màn hình tràn viền, camera AI thông minh, selfie siêu đẹp, ảo diệu"
+            ,"specs":"img/tskt_f5.jpg"
         },
 
         {
             "id": "14",
             "productID": "op04",
             "productName": "OPPO A83",
-            "manutype": "OPPO",
+            "manutype": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/OPPO_Logo.svg/1280px-OPPO_Logo.svg.png",
             "quantity": "20",
             "gia": "4.990.000 vnd",
             "image": "https://cdn.tgdd.vn/Products/Images/42/145295/oppo-a83-600x600-300x300.jpg",
@@ -210,20 +238,22 @@
             "tag": "none",
             "description": "Mua điện thoại OPPO A83 chính hãng trả góp 0% hoặc giảm ngay 1 triệu. Giảm thêm 1 triệu khi thanh toán online bằng thẻ Mastercard. Giao hàng miễn phí toàn quốc trong 1 giờ. 1 đổi 1 tháng đầu tiên với sản phẩm lỗi.",
             "detail": "OPPO A83 màn hình tràn viền, CPU 8 nhân 2.5 GHz, bộ nhớ RAM 3 GB, pin 3180 mAh. Xem thông tin chi tiết mới nhất về sản phẩm tại đây."
+            ,"specs":"img/tskt_a83.jpg"
         },
 
         {
             "id": "15",
             "productID": "op05",
             "productName": "OPPO A71",
-            "manutype": "OPPO",
+            "manutype": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/OPPO_Logo.svg/1280px-OPPO_Logo.svg.png",
             "quantity": "20",
             "gia": "4.190.000 vnd",
             "image": "https://cdn.tgdd.vn/Products/Images/42/158280/oppo-a71-32gb-2018-600x600.jpg",
             "imgFull": "https://cdn3.tgdd.vn/Products/Images/42/158280/oppo-a71-32gb-2018-mau-den-2-2-org.jpg",
-            "tag": "hot",
+            "tag": "none",
             "description": "Mua điện thoại OPPO A71 chính hãng trả góp 0% và giảm ngay 2 triệu. Áp dụng đại tiệc giảm thêm lên đến 7% (30-31/08). Giảm thêm 1 triệu thanh toán online bằng thẻ Mastercard, ĐỘC QUYỀN: 90 ngày lỗi đổi mới, thu cũ đổi mới trợ giá 1 triệu.",
             "detail": "OPPO A71 thiết kế đẳng cấp, sang trọng, chuẩn chống nước IP67. Mua ngay để nhận nhiều ưu đãi hấp dẫn."
+            ,"specs":"img/tskt_a71.jpg"
         }
     ],
     "user": [{
