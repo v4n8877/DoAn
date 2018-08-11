@@ -20,6 +20,30 @@ class Home extends Component {
 		}
 	}
   
+	componentWillMount(){
+		let listCart = localStorage.getItem("listCart");
+		let getCart = JSON.parse(listCart);
+		let saveCart = {id, image, productName, price, quantity};
+		let emptyCart = this.state.emptyCart;
+		let id = this.state.id;
+		let image = this.state.image;
+		let productName = this.state.productName;
+		let price = this.state.price;
+		let quantity = this.state.quantity;
+		if (getCart == null) {
+			this.setState({
+	          emptyCart: emptyCart,        
+	        });
+	        return false;
+		}
+		else{
+			emptyCart.shift();
+			this.setState({
+				emptyCart: getCart
+			});
+		}
+	}
+
 	componentDidMount(){
 		HomeStores.on("change", () => {
 	        this.setState({
