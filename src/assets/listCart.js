@@ -16,10 +16,18 @@ class ListCart extends Component {
 	componentWillMount(){
 		let listCart = localStorage.getItem("listCart");
 		let getCart = JSON.parse(listCart);
-		let Cart = this.state.Cart;
+		let cart = this.state.cart;
+		if (getCart == null) {
+			this.setState({
+	          cart: cart
+	        });
+	        return true;
+		}
+		else{
 		this.setState({
           cart: getCart
         });
+		}
   	}
 
 	render(){
@@ -61,9 +69,7 @@ class ListCart extends Component {
 				        <th>Total</th>
 				      </tr>
 				    </thead>
-				    <tbody>
 				      {showCart}
-				    </tbody>
 				</table>
 			</div>
 		);

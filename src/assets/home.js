@@ -16,14 +16,14 @@ class Home extends Component {
 				image: '',
 				productName: '',
 				price: '',
-				quantity: 0
+				quantity: ''
 		}
 	}
   
 	componentDidMount(){
 		HomeStores.on("change", () => {
 	        this.setState({
-	          categorys: HomeStores.getAllData()
+	          categorys: HomeStores.getAllData(),
 	        });
 	   	})
 	}
@@ -44,10 +44,11 @@ class Home extends Component {
 	}
 
 	addCart = (i) =>{
-		let idc = i;
 		let category = this.state.categorys;
 		let emptyCart = this.state.emptyCart;
+		let sttStore = this.sttStore;
 		let id = this.state.id;
+		let idc = i;
 		let image = this.state.image;
 		let productName = this.state.productName;
 		let price = this.state.price;
@@ -64,9 +65,9 @@ class Home extends Component {
 		}
 		else if ( emptyCart.length !== 0) {
 			var index ;
-			var check = true;
-			emptyCart.forEach((element, ind)=> {
-				if (element.id == i){
+			var check = true ;
+			emptyCart.filter((element, ind)=> {
+				if (element.id == idc){
 					index = ind;
 					newCart.id = element.id;
 					newCart.image = element.image;
@@ -75,7 +76,7 @@ class Home extends Component {
 					newCart.quantity = parseInt(element.quantity) +1;
 					emptyCart[index] = newCart;
 					this.setState({
-							emptyCart: emptyCart,
+						emptyCart: emptyCart	
 					});
 					check = false;
 					return false;

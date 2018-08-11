@@ -94,7 +94,7 @@ class App extends Component {
                   <div className="header-left">
                     <Link to={checkStore? "/Home": "/Login"} onClick={()=>this.checkLogin()}><i style={{color: "white", "padding-Right":"15px"}} className="fa fa-user"></i>{checkStore? textLogout : 'Account'}</Link>
                     <Link to="/Cart" component= {ListCart}><i style={{ "padding-Right":"15px"}} className="fa fa-cart-arrow-down"></i>My Cart</Link>
-                    <Link to={checkStore? "/Home": "/Register"} onClick={() => this.checkout()}> {checkStore? 'log out' : 'REGISTER'}</Link>
+                    <Link to={checkStore? "/Home": "/Register"} onClick={() => this.checkout()}> {checkStore?'Log out':'REGISTER' }</Link>
                   </div>
                 </div>
               </div>
